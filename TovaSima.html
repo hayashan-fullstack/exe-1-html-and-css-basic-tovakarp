@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TovaSima</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+   
+</head>
+<body>
+
+	<h1 class="header">Tova Sima</h1>
+	<ul class="navbar">
+  		<li><a href="switzerland.jpg"; target="_blank"><img src="switzerland.jpg" height = "80" width ="100" title="Go To This Picture"/></a>
+ 		 <li><a href="ramon.jpg"; target="_blank"><img src="ramon.jpg" height = "80" width ="100" title="Go To This Picture"/></a>
+  		 <li><a href="winter.jpg"; target="_blank"><img src="winter.jpg" height = "80" width ="100" title="Go To This Picture"/></a>
+  		 <li><a href="spider.jpg"; target="_blank"><img src="spider.jpg" height = "80" width ="100" title="Go To This Picture"/></a>
+		 <li><a href="city.jpg"; target="_blank"><img src="city.jpg" height = "80" width ="100" title="Go To This Picture"/></a>
+	</ul>
+
+<marquee class="marq"  direction = "up"  > 
+	</br>
+        <div class="s1">This  Is My Site</div> 
+	</br>
+        <div class="s2">If you like it give it a LIKE</div> 
+	</br>
+    </marquee> 
+</br>
+</br>
+<div class="g"></br>Sign In</br>***</div>	
+</br>
+<form action="get" class="form">
+    <span>First Name</span>
+    <input type="text" name="" id="">
+    <br/>
+    <span>Last Name</span>
+    <input type="text" name="" id="">
+    <br/>
+
+    <span>Password</span>
+    <input type="password" name="" id="">
+    <br/>
+	<span>Area</span>
+	<select name="area">
+		<option value="N">North</option>
+		<option value="C" selected="selected">Center</option>
+		<option value="S">South</option>
+		<option value="J">Jerusalem</option>
+	</select>
+  
+    <br/>
+	<span>Remember Me:</br></span>
+	<input type="radio" name="gender" value="M" checked/>Yes
+	<br />
+	<input type="radio" name="gender" value="F" />Never
+</br>
+<button type="submit" >Apply</button>
+
+  </form>
+</br>
+</bt>
+</br>
+</bt>
+</br>
+</bt>
+</br>
+</bt>
+
+</body>
+
+<footer>
+<body onload="startTime()">
+</br>
+<div id="txt" style="color:white;font-size:50pt; background-color:hsla(240, 100%, 64%, 0.2);">hsla(240, 100%, 64%, 0.2); "></div>
+</br>
+</footer>
+</html>
